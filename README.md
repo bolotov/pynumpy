@@ -1,6 +1,6 @@
 pynumpy
 =======
-A NumPy sub-set which does not require C, based on **tinynumpy**
+A NumPy sub-set which does not require C, based on **tinynumpy** by Wade Brainerd
 
 A lightweight, pure Python, numpy compliant ndarray class.
 
