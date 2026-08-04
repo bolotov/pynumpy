@@ -1,0 +1,30 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='pynumpy',
+    packages=find_packages(),
+    version='1.2.1',
+    description='A lightweight, pure Python, numpy compliant ndarray class',
+    author='Wade Brainerd, Almar Klein, Oleksandr Bolotov',
+    author_email='wadetb@gmail.com',
+    url='https://github.com/bolotov/pynumpy',
+    keywords=['Science', 'Research', 'Engineering', 'Software Development'],
+    classifiers=[
+        'Development Status :: 4 - Beta',
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Libraries',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+    ],
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+)

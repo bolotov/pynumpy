@@ -7,6 +7,8 @@ https://github.com/wadetb
 
 Almar Klein - https://github.com/almarklein
 
+Eric Allen Youngson - https://github.com/eayoungs
+
 Kristof S. - https://github.com/Kramer84
 
 Jamie Bull - https://github.com/jamiebull1
