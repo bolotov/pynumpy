@@ -1,25 +1,28 @@
 # CREDITS
 
-## Thanks to:
+## Project Lineage
 
-Wade Brainerd - ORIGINAL TinyNumPy author
-https://github.com/wadetb
+`pynumpy` is a fork of the `tinynumpy` project. We gratefully acknowledge the foundations laid by the original authors.
 
-Almar Klein - https://github.com/almarklein
+### Original Project (TinyNumPy)
 
-Eric Allen Youngson - https://github.com/eayoungs
+* **Wade Brainerd** - Original Author (https://github.com/wadetb)
+* **Almar Klein** - Primary Contributor (https://github.com/almarklein)
 
-Kristof S. - https://github.com/Kramer84
+### Contributors (Historical)
 
-Jamie Bull - https://github.com/jamiebull1
+* Eric Allen Youngson - https://github.com/eayoungs
+* Kristof S. - https://github.com/Kramer84
+* Jamie Bull - https://github.com/jamiebull1
+* Philipp A. - https://github.com/flying-sheep
+* Shane Jarvie - https://github.com/sjarvie
+* Ben Zhang - https://github.com/ben-z
 
-Philipp A. - https://github.com/flying-sheep
+### Special Thanks
 
-Shane Jarvie - https://github.com/sjarvie
+* **PhialsBasement** - For the Standard Strassen AlphaEvolve algorithm and comparison logic.
+  https://github.com/PhialsBasement/AlphaEvolve-MatrixMul-Verification/
 
-Ben Zhang - https://github.com/ben-z
+## Current Maintenance (pynumpy)
 
-
-PhialsBasement
-thanks for Standard Strassen AlphaEvolve algo and comparison
-https://github.com/PhialsBasement/AlphaEvolve-MatrixMul-Verification/
+* **Oleksandr Bolotov** - Fork maintainer and current author (2026-present)
