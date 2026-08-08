@@ -8,6 +8,7 @@ version = "1.2.1"
 description = "A lightweight, pure Python, numpy compliant ndarray class"
 readme = "README.md"
 authors = [
+    { name = "Oleksandr Bolotov" },
     { name = "Wade Brainerd", email = "wadetb@gmail.com" },
     { name = "Almar Klein" }
 ]
@@ -29,6 +30,10 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3.15",
 ]
 requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
