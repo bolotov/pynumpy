@@ -1,19 +1,22 @@
 pynumpy
 =======
-A NumPy sub-set which does not require C, based on **tinynumpy** by Wade Brainerd
 
-A lightweight, pure Python, numpy compliant ndarray class.
+[INFO] A lightweight, pure Python, NumPy-compliant ndarray library.
 
-This module is intended to allow libraries that depend on numpy, but
-do not make much use of array processing, to make numpy an optional
-dependency. This might make such libaries better available, also on
-platforms like Pypy and Jython.
+`pynumpy` is a fork of **tinynumpy** (originally created by Wade Brainerd). It is designed to provide a subset of NumPy functionality in environments where C extensions are unavailable or undesirable (e.g., PyPy, Jython, or constrained systems).
 
-Links to old Docs
------------------
+History and Lineage
+-------------------
 
-* Github: https://github.com/wadetb/tinynumpy
-* Docs: http://tinynumpy.readthedocs.org/en/latest/
+This project was forked in 2026 to continue development and maintenance.
+* **Original Project:** [tinynumpy](https://github.com/wadetb/tinynumpy)
+* **Current Maintainer:** Oleksandr Bolotov
+
+Links
+-----
+
+* **GitHub:** [https://github.com/bolotov/pynumpy](https://github.com/bolotov/pynumpy)
+* **Documentation:** [https://pynumpy.readthedocs.io/](https://pynumpy.readthedocs.io/)
 
 
 Features
@@ -45,10 +48,8 @@ Examples
 --------
 
 ```python
-
->>> from tinynumpy import tinynumpy as tnp
-
->>> a = tnp.array([[1, 2, 3, 4],[5, 6, 7, 8]])
+>>> from pynumpy import pynumpy as pnp
+>>> a = pnp.array([[1, 2, 3, 4],[5, 6, 7, 8]])
 
 >>> a
 array([[ 1.,  2.,  3.,  4.],
