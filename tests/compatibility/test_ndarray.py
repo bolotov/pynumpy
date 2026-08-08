@@ -3,8 +3,10 @@ import unittest
 import pynumpy as pnp
 from .helper import skip_if_no_numpy, np
 
+
 def _clean_repr(a):
     return "".join(repr(a).split())
+
 
 @skip_if_no_numpy
 class TestPyNDArrayCompat(unittest.TestCase):
@@ -52,6 +54,7 @@ class TestPyNDArrayCompat(unittest.TestCase):
             _clean_repr(self.n0[np.newaxis, 2:]),
         )
 
+
 @skip_if_no_numpy
 class TestNDIterCompat(unittest.TestCase):
     def setUp(self):
@@ -63,6 +66,7 @@ class TestNDIterCompat(unittest.TestCase):
             [float(i) for i in pnp.nditer(self.t0)],
             [float(i) for i in np.nditer(self.n0)],
         )
+
 
 @skip_if_no_numpy
 class TestFunctionsCompat(unittest.TestCase):
@@ -79,6 +83,7 @@ class TestFunctionsCompat(unittest.TestCase):
 
     def test_std(self):
         self.assertAlmostEqual(float(self.t1.std()), float(self.n1.std()))
+
 
 if __name__ == "__main__":
     unittest.main()

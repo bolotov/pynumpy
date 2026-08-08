@@ -3,6 +3,7 @@ import unittest
 import pynumpy as pnp
 from .helper import skip_if_no_numpy, np
 
+
 @skip_if_no_numpy
 class TestPyNumPyCompat(unittest.TestCase):
     def test_shapes_and_strides(self):
@@ -69,6 +70,7 @@ class TestPyNumPyCompat(unittest.TestCase):
                 self.assertEqual(a1.shape, b1.shape)
                 self.assertEqual(a1.dtype, b1.dtype)
                 self.assertTrue((a1 == b1).all())
+
 
 if __name__ == "__main__":
     unittest.main()

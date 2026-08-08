@@ -2,6 +2,7 @@
 import unittest
 import pynumpy as pnp
 
+
 class TestPyNumPyInternal(unittest.TestCase):
     def test_dtype_exposure(self):
         # Verify that common dtypes are available at the top level
@@ -64,6 +65,7 @@ class TestPyNumPyInternal(unittest.TestCase):
         y = [0, 3, -1]
         a = pnp.multiply(x, y)
         self.assertTrue((a == pnp.array([0, -6, -1], dtype="int64")).all())
+
 
 if __name__ == "__main__":
     unittest.main()

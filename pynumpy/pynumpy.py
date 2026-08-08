@@ -280,15 +280,13 @@ def array(obj, dtype=None, copy=True, order=None):
 
 
 def zeros_like(a, dtype=None, order=None):
-    """Return an array of zeros with the same shape and type as a given array.
-    """
+    """Return an array of zeros with the same shape and type as a given array."""
     dtype = a.dtype if dtype is None else dtype
     return zeros(a.shape, dtype, order)
 
 
 def ones_like(a, dtype=None, order=None):
-    """Return an array of ones with the same shape and type as a given array.
-    """
+    """Return an array of ones with the same shape and type as a given array."""
     dtype = a.dtype if dtype is None else dtype
     return ones(a.shape, dtype, order)
 
@@ -777,12 +775,8 @@ class ndarray(object):
                 repr_str += "["
                 for k_index, k in enumerate(xrange(self.shape[axis])):
                     if k_index > 0:
-                        repr_str += (
-                            "\n       " + " " * axis
-                        ) * axisindent
-                    offset_ = (
-                        offset + k * self._strides[axis] // self.itemsize
-                    )
+                        repr_str += ("\n       " + " " * axis) * axisindent
+                    offset_ = offset + k * self._strides[axis] // self.itemsize
                     repr_str = _repr_r(repr_str, axis + 1, offset_)
                     if k_index < self.shape[axis] - 1:
                         repr_str += ", "

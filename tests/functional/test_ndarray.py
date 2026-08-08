@@ -2,8 +2,10 @@
 import unittest
 import pynumpy as pnp
 
+
 def _clean_repr(a):
     return "".join(repr(a).split())
+
 
 class TestFunctions(unittest.TestCase):
     def setUp(self):
@@ -28,7 +30,7 @@ class TestFunctions(unittest.TestCase):
         v = a[2:5]
         # Perform in-place addition on the view
         v += 1
-        
+
         # Verify that ONLY the view's elements were modified
         expected = pnp.array([0, 0, 1, 1, 1, 0, 0, 0, 0, 0], dtype="int32")
         self.assertTrue((a == expected).all())
@@ -130,10 +132,11 @@ class TestFunctions(unittest.TestCase):
         # Test top-level reshape variadic
         d = pnp.reshape(a, 2, 2)
         self.assertEqual(d.shape, (2, 2))
-        
+
     def test_linalg_alias(self):
-        self.assertTrue(hasattr(pnp, 'linalg'))
-        self.assertTrue(hasattr(pnp.linalg, 'det'))
+        self.assertTrue(hasattr(pnp, "linalg"))
+        self.assertTrue(hasattr(pnp.linalg, "det"))
+
 
 if __name__ == "__main__":
     unittest.main()
